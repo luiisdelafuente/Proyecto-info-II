@@ -4,11 +4,16 @@
 #include <QTextEdit>
 #include <QPushButton>
 #include <QFont>
+#include <iostream>
 
 #include "ventana2.h"
+#include "ventana3.h"
+#include "principal.h"
 
-Ventana2::Ventana2(QWidget *parent) : QWidget(parent)
+Ventana2::Ventana2(FILE* FP,QWidget *parent) : QWidget(parent)
 {
+
+
 	setGeometry(400,200,550,150);
 	setFixedSize(550,350);
 	setWindowTitle("Paso 1");
@@ -29,5 +34,21 @@ Ventana2::Ventana2(QWidget *parent) : QWidget(parent)
 	no2=new QPushButton("No",this);
 	no2->setGeometry(50, 300, 80, 30);
 
+	pventana3=NULL;
+	FPP=FP;
+	connect(no2,SIGNAL(clicked()),this,SLOT(mostrarVentana3()));
 }
 
+
+void Ventana2::mostrarVentana3()
+{
+	printf("\n\n\n FPP=%p\n\n\n",FPP);
+
+		if(!pventana3)
+	{
+		pventana3=new Ventana3(FPP);	//Le envio a la ventana 3 el puntero al archivo;
+	}
+		hide();
+		pventana3->show();
+
+}

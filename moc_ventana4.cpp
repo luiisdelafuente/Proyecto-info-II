@@ -1,15 +1,15 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'ventana2.h'
+** Meta object code from reading C++ file 'ventana4.h'
 **
-** Created: Sun 8. Nov 14:40:07 2020
+** Created: Sun 8. Nov 14:40:08 2020
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "ventana2.h"
+#include "ventana4.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'ventana2.h' doesn't include <QObject>."
+#error "The header file 'ventana4.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 63
 #error "This file was generated using the moc from 4.8.4. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -17,7 +17,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_Ventana2[] = {
+static const uint qt_meta_data_Ventana4[] = {
 
  // content:
        6,       // revision
@@ -36,50 +36,50 @@ static const uint qt_meta_data_Ventana2[] = {
        0        // eod
 };
 
-static const char qt_meta_stringdata_Ventana2[] = {
-    "Ventana2\0\0mostrarVentana3()\0"
+static const char qt_meta_stringdata_Ventana4[] = {
+    "Ventana4\0\0finalizar()\0"
 };
 
-void Ventana2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Ventana4::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         Q_ASSERT(staticMetaObject.cast(_o));
-        Ventana2 *_t = static_cast<Ventana2 *>(_o);
+        Ventana4 *_t = static_cast<Ventana4 *>(_o);
         switch (_id) {
-        case 0: _t->mostrarVentana3(); break;
+        case 0: _t->finalizar(); break;
         default: ;
         }
     }
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData Ventana2::staticMetaObjectExtraData = {
+const QMetaObjectExtraData Ventana4::staticMetaObjectExtraData = {
     0,  qt_static_metacall 
 };
 
-const QMetaObject Ventana2::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_Ventana2,
-      qt_meta_data_Ventana2, &staticMetaObjectExtraData }
+const QMetaObject Ventana4::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_Ventana4,
+      qt_meta_data_Ventana4, &staticMetaObjectExtraData }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &Ventana2::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &Ventana4::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *Ventana2::metaObject() const
+const QMetaObject *Ventana4::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *Ventana2::qt_metacast(const char *_clname)
+void *Ventana4::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_Ventana2))
-        return static_cast<void*>(const_cast< Ventana2*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_Ventana4))
+        return static_cast<void*>(const_cast< Ventana4*>(this));
     return QWidget::qt_metacast(_clname);
 }
 
-int Ventana2::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Ventana4::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
