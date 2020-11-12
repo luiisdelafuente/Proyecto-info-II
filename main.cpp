@@ -1,15 +1,15 @@
 #include <QApplication>
-
-
-#include "principal.h"
+#include <QFont>
+#include <QPushButton>
+#include "inicio.h"
 
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
 
-	inicio *p1 = new inicio();
-	p1->show();
-
+    inicio * pi;
+    pi=new inicio();
+    pi->show();
 
     return app.exec();
 }
